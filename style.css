@@ -122,7 +122,6 @@ body {
   transform: translateY(-2px);
 }
 
-
 /* Speakers Section Styles  */
 .speakers-section {
   padding: 80px 5%;
@@ -168,7 +167,7 @@ body {
 
 .track-label {
   display: inline-block;
-  color: #2563EB;
+  color: #2563eb;
   font-size: 12px;
   font-weight: bold;
   letter-spacing: 0.5px;
@@ -178,7 +177,7 @@ body {
 .speaker-name {
   font-size: 22px;
   font-weight: bold;
-  color: #0D1B2A;
+  color: #0d1b2a;
   margin-bottom: 6px;
 }
 
@@ -187,9 +186,7 @@ body {
   color: #575757;
 }
 
-
 /* Pricing Card Style  */
-/* --- Pricing Section Container --- */
 .pricing-section {
   padding: 80px 5%;
   background-color: #f8f9fa;
@@ -199,41 +196,38 @@ body {
   text-align: center;
   color: #6b7280;
   font-size: 16px;
-  margin-top: -40px; /* Pulls subtitle closer to the h2 */
+  margin-top: -40px;
   margin-bottom: 50px;
 }
 
-/* --- 3-Column Grid Layout --- */
 .pricing-grid {
   display: grid;
-  grid-template-columns: repeat(3, 1fr); /* Creates 3 equal columns */
+  grid-template-columns: repeat(3, 1fr);
   gap: 30px;
   max-width: 1100px;
   margin: 0 auto;
-  align-items: stretch; /* Makes all 3 cards the exact same height */
+  align-items: stretch;
 }
 
-/* --- Standard & Team Card Styling --- */
 .pricing-card {
   background-color: #ffffff;
   border: 1px solid #e5e7eb;
   border-radius: 12px;
   padding: 35px 30px;
-  
-  /* Flexbox magic to push the button to the very bottom */
+
   display: flex;
   flex-direction: column;
   justify-content: space-between;
-  
+
   box-shadow: 0 4px 10px rgba(0, 0, 0, 0.02);
 }
 
 /* --- PRO Card --- */
 .pro-card {
-  background-color: #0D1B2A;
+  background-color: #0d1b2a;
   color: #ffffff;
   border-color: #1e293b;
-  transform: scale(1.03); 
+  transform: scale(1.03);
   box-shadow: 0 10px 25px rgba(0, 0, 0, 0.15);
 }
 
@@ -248,7 +242,7 @@ body {
 }
 
 .pro-card .plan-name {
-  color: #38bdf8; 
+  color: #38bdf8;
 }
 
 .price {
@@ -291,7 +285,6 @@ body {
   color: #e2e8f0;
 }
 
-/* Creates custom blue bullet dots using CSS position */
 .features-list li::before {
   content: "•";
   color: #2563eb;
@@ -318,7 +311,6 @@ body {
   width: 100%;
 }
 
-/* Outline Button (For Standard and Team) */
 .btn-outline {
   background-color: transparent;
   color: #2563eb;
@@ -330,11 +322,63 @@ body {
 }
 
 .btn-solid {
-  background-color: #2563EB;
+  background-color: #2563eb;
   color: #ffffff;
   border: 1px solid #2563eb;
 }
 
 .btn-solid:hover {
   background-color: #1d4ed8;
+}
+
+/* Footer Section Styles  */
+.site-footer {
+  background-color: #0d1b2a;
+  color: #ffffff;
+  padding: 30px 5% 20px 5%;
+  font-family: "Arial", sans-serif;
+}
+
+.footer-top {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 30px;
+}
+
+.footer-logo img {
+  height: 35px;
+  width: auto;
+  display: block;
+}
+
+.footer-socials {
+  display: flex;
+  gap: 20px;
+}
+
+.footer-socials img {
+  width: 24px;
+  height: 24px;
+  display: block;
+}
+
+.footer-socials a:hover img {
+  opacity: 0.7;
+}
+
+.footer-divider {
+  border: 0;
+  height: 1px;
+  background-color: rgba(255, 255, 255, 0.1);
+  margin-bottom: 25px;
+}
+
+.footer-bottom {
+  text-align: center;
+}
+
+.footer-bottom p {
+  font-size: 13px;
+  color: #8da2bb;
 }
