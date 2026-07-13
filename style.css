@@ -186,3 +186,155 @@ body {
   font-size: 14px;
   color: #575757;
 }
+
+
+/* Pricing Card Style  */
+/* --- Pricing Section Container --- */
+.pricing-section {
+  padding: 80px 5%;
+  background-color: #f8f9fa;
+}
+
+.section-subtitle {
+  text-align: center;
+  color: #6b7280;
+  font-size: 16px;
+  margin-top: -40px; /* Pulls subtitle closer to the h2 */
+  margin-bottom: 50px;
+}
+
+/* --- 3-Column Grid Layout --- */
+.pricing-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr); /* Creates 3 equal columns */
+  gap: 30px;
+  max-width: 1100px;
+  margin: 0 auto;
+  align-items: stretch; /* Makes all 3 cards the exact same height */
+}
+
+/* --- Standard & Team Card Styling --- */
+.pricing-card {
+  background-color: #ffffff;
+  border: 1px solid #e5e7eb;
+  border-radius: 12px;
+  padding: 35px 30px;
+  
+  /* Flexbox magic to push the button to the very bottom */
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.02);
+}
+
+/* --- PRO Card --- */
+.pro-card {
+  background-color: #0D1B2A;
+  color: #ffffff;
+  border-color: #1e293b;
+  transform: scale(1.03); 
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.15);
+}
+
+/* --- Typography Inside Cards --- */
+.plan-name {
+  font-size: 13px;
+  font-weight: bold;
+  letter-spacing: 1px;
+  color: #6b7280;
+  display: block;
+  margin-bottom: 15px;
+}
+
+.pro-card .plan-name {
+  color: #38bdf8; 
+}
+
+.price {
+  font-size: 42px;
+  font-weight: 800;
+  margin-bottom: 25px;
+  color: #1a1a1a;
+}
+
+.pro-card .price {
+  color: #ffffff;
+}
+
+.per-person {
+  font-size: 14px;
+  font-weight: normal;
+  color: #6b7280;
+  display: block;
+}
+
+.pro-card .per-person {
+  color: #94a3b8;
+}
+
+/* --- Features Bullet List --- */
+.features-list {
+  list-style: none;
+  margin-bottom: 35px;
+}
+
+.features-list li {
+  font-size: 14px;
+  color: #4b5563;
+  margin-bottom: 15px;
+  padding-left: 20px;
+  position: relative;
+}
+
+.pro-card .features-list li {
+  color: #e2e8f0;
+}
+
+/* Creates custom blue bullet dots using CSS position */
+.features-list li::before {
+  content: "•";
+  color: #2563eb;
+  font-size: 20px;
+  position: absolute;
+  left: 0;
+  top: -3px;
+}
+
+.pro-card .features-list li::before {
+  color: #38bdf8;
+}
+
+/* --- Bottom Buttons --- */
+.btn-plan {
+  text-align: center;
+  text-decoration: none;
+  padding: 12px;
+  border-radius: 6px;
+  font-weight: bold;
+  font-size: 14px;
+  transition: all 0.2s ease;
+  display: block;
+  width: 100%;
+}
+
+/* Outline Button (For Standard and Team) */
+.btn-outline {
+  background-color: transparent;
+  color: #2563eb;
+  border: 1px solid #2563eb;
+}
+
+.btn-outline:hover {
+  background-color: #eff6ff;
+}
+
+.btn-solid {
+  background-color: #2563EB;
+  color: #ffffff;
+  border: 1px solid #2563eb;
+}
+
+.btn-solid:hover {
+  background-color: #1d4ed8;
+}
