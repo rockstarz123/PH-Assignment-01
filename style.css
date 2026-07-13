@@ -125,7 +125,7 @@ body {
 /* Speakers Section Styles  */
 .speakers-section {
   padding: 80px 5%;
-  background-color: #ffffff;
+  /* background-color: #ffffff; */
 }
 
 .section-title {
@@ -186,10 +186,12 @@ body {
   color: #575757;
 }
 
+
+
 /* Pricing Card Style  */
 .pricing-section {
   padding: 80px 5%;
-  background-color: #f8f9fa;
+  /* background-color: #f8f9fa; */
 }
 
 .section-subtitle {
@@ -329,6 +331,181 @@ body {
 
 .btn-solid:hover {
   background-color: #1d4ed8;
+}
+
+/* Brain Storming Secton Styles  */
+.hackathon-section {
+  background-color: #ffffff;
+  padding: 90px 5%;
+  position: relative; 
+  max-width: 1200px;
+  margin: 0 auto;
+  font-family: "Arial", sans-serif;
+}
+
+/* --- Absolute Positioning Badge --- */
+.featured-badge {
+  position: absolute;
+  top: 30px;
+  right: 5%;
+  background-color: #0f172a; 
+  color: #38bdf8; 
+  font-size: 12px;
+  font-weight: bold;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+  padding: 6px 16px;
+  border-radius: 20px;
+}
+
+/* --- Part 1: Center Header Panel --- */
+.hackathon-intro {
+  text-align: center;
+  max-width: 750px;
+  margin: 0 auto 60px auto;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.hackathon-tagline {
+  color: #2563eb; /* Primary theme blue */
+  font-size: 14px;
+  font-weight: bold;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+  margin-bottom: 10px;
+}
+
+.hackathon-intro h2 {
+  font-size: 38px;
+  font-weight: 800;
+  color: #1a1a1a;
+  margin-bottom: 15px;
+}
+
+.hackathon-intro h3 {
+  font-size: 20px;
+  color: #4b5563;
+  font-weight: normal;
+  margin-bottom: 20px;
+}
+
+.hackathon-intro h3 span {
+  font-weight: bold;
+  color: #1a1a1a;
+}
+
+.hackathon-intro p {
+  font-size: 15px;
+  color: #6b7280;
+  line-height: 1.6;
+  margin-bottom: 30px;
+}
+
+/* Interactive CTA Button Scaling */
+.btn-hackathon {
+  display: inline-block;
+  background-color: #2563eb;
+  color: #ffffff;
+  text-decoration: none;
+  padding: 14px 36px;
+  border-radius: 6px;
+  font-weight: bold;
+  font-size: 15px;
+  box-shadow: 0 4px 15px rgba(37, 99, 235, 0.2);
+  transition:
+    transform 0.2s ease,
+    background-color 0.2s ease;
+}
+
+.btn-hackathon:hover {
+  background-color: #1d4ed8;
+  transform: scale(1.05); /* Scales the element cleanly outward */
+}
+
+/* --- Part 2: 4-Column Statistics Grid --- */
+.hackathon-stats-grid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr); /* 4 equal wide columns side-by-side */
+  gap: 24px;
+  margin-bottom: 70px;
+}
+
+.stat-card {
+  background-color: #ffffff;
+  border: 1px solid #e5e7eb;
+  border-radius: 12px;
+  padding: 30px 20px;
+  text-align: center;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.02);
+  transition:
+    transform 0.3s ease,
+    box-shadow 0.3s ease; /* Enables clean transition fluid motions */
+}
+
+/* Stat Card Lift Effect */
+.stat-card:hover {
+  transform: translateY(-6px); /* Shifts card vertically up on the page */
+  box-shadow: 0 12px 24px rgba(0, 0, 0, 0.08); /* Deepens shadow depth output */
+}
+
+.stat-card h4 {
+  font-size: 36px;
+  font-weight: 800;
+  color: #2563eb;
+  margin-bottom: 5px;
+}
+
+.stat-card p {
+  font-size: 14px;
+  color: #4b5563;
+  font-weight: bold;
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+}
+
+/* --- Part 3: Tracks Area --- */
+.hackathon-tracks-wrapper {
+  text-align: center;
+}
+
+.tracks-title {
+  font-size: 22px;
+  font-weight: bold;
+  color: #1a1a1a;
+  margin-bottom: 30px;
+}
+
+/* 3-Column Grid for Badges */
+.tracks-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr); /* Arranges elements into 3 columns */
+  gap: 20px;
+  max-width: 900px;
+  margin: 0 auto;
+}
+
+/* Individual Badge Styling */
+.track-badge {
+  background-color: #ffffff;
+  border: 1px solid #e5e7eb;
+  color: #4b5563;
+  font-weight: bold;
+  font-size: 15px;
+  padding: 20px;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: all 0.3s ease; /* Transitions background, border and text colors at once */
+}
+
+/* Active Highlight Hover State */
+.track-badge:hover {
+  background-color: #2563eb;
+  color: #ffffff;
+  border-color: #2563eb;
+  transform: translateY(-3px);
+  box-shadow: 0 6px 15px rgba(37, 99, 235, 0.15);
 }
 
 /* Footer Section Styles  */
